@@ -1,0 +1,33 @@
+<!-- 1. Crie uma página HTML com um botão e um parágrafo. Escreva um programa que, ao clicar no botão, altere o texto do parágrafo para "Olá, mundo!" utilizando o método getElementById. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Desafio 1</title>
+  </head>
+
+  <body>
+    <main>
+      <button id="button">Alterar texto</button>
+      <p id="text">Texto qualquer</p>
+      <button id="reload">Recarregar página</button>
+    </main>
+
+    <script>
+      const button = document.getElementById("button");
+      const text = document.getElementById("text");
+      const reload = document.getElementById("reload");
+
+      button.addEventListener("click", () => {
+        text.innerHTML = "Olá, mundo!";
+      });
+
+      reload.addEventListener("click", () => {
+        window.location.reload();
+      });
+    </script>
+  </body>
+</html>

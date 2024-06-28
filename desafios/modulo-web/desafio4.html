@@ -1,0 +1,37 @@
+<!-- 4. Crie uma página HTML com várias divs com a classe "item". Escreva um programa que altere o texto de todas as divs para "Item alterado" utilizando o método **querySelectorAll**. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Desafio 4</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="item">Item</div>
+      <div class="item">Item</div>
+      <div class="item">Item</div>
+      <button>Alterar Itens</button>
+      <button id="reload">Recarregar página</button>
+    </main>
+
+    <script>
+      const item = document.querySelectorAll(".item");
+      const button = document.querySelector("button");
+      const reload = document.querySelector("#reload");
+
+      button.addEventListener("click", () => {
+        item.forEach((item) => {
+          item.innerHTML = "Item alterado";
+        });
+      });
+
+      reload.addEventListener("click", () => {
+        window.location.reload();
+      });
+    </script>
+  </body>
+</html>

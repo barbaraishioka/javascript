@@ -1,0 +1,31 @@
+<!-- 2. Crie uma página HTML com vários elementos de âncora (<a>). Escreva um programa que, ao clicar em um link, exiba um alerta com o texto do link utilizando o método getElementByTagName. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Desafio 2</title>
+  </head>
+
+  <body>
+    <main id="links" style="gap: 0">
+      <a href="#abacate">Abacate</a>
+      <a href="#banana">Banana</a>
+      <a href="#manga">Manga</a>
+      <a href="#pera">Pêra</a>
+      <a href="#ameixa">Ameixa</a>
+    </main>
+
+    <script>
+      const links = document.getElementsByTagName("a");
+
+      for (let i = 0; i < links.length; i++) {
+        links[i].addEventListener("click", () => {
+          alert(links[i].textContent);
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #000;
+}
+
+main {
+  width: 400px;
+  max-width: 90vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  text-align: center;
+  gap: 20px;
+}
+
+button,
+p,
+a,
+div {
+  width: 100%;
+  padding: 20px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+button,
+a {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+button:hover,
+a:hover,
+button:focus,
+a:focus {
+  opacity: 1;
+}
+
+#links > a:hover {
+  text-decoration: underline;
+}
