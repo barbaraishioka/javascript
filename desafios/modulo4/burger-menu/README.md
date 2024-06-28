@@ -19,13 +19,13 @@ Este é um projeto simples de uma página web que mostra um menu de burgers util
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/barbaraishioka/burger-menu.git
+   git clone https://github.com/barbaraishioka/javascript.git
    ```
 
 2. Navegue até o diretório do projeto:
 
    ```bash
-   cd burger-menu
+   cd javascript/desafios/modulo4/burger-menu/
    ```
 
 3. Abra o arquivo `index.html` no seu navegador preferido.
